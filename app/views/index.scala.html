@@ -1,0 +1,47 @@
+@()
+
+@main("Welcome to Student app") {
+  <h1>Welcome to Student app!</h1>
+    <h2> Following are the endpoints </h2>
+        <h3>
+          POST    /student
+            <h4>
+                Sample Body:
+                {
+                "name":"Lakshman",
+                "age": 15,
+                "standard":"4",
+                "section":"E"
+                }
+
+            </h4>
+        </h3>
+        <h3>
+            GET     /student/:id
+
+           <h4>
+               Sample Request:
+               http://localhost:9000/student/5b6010a9ea18cd582f01c9ee
+           </h4>
+        </h3>
+        <h3>
+            PUT     /student/:id
+                <h4>
+                    Sample Request:
+                    http://localhost:9000/student/5b6010a9ea18cd582f01c9ee
+                    <br><br>
+                    Sample Body:
+                    {
+                    "name":"Ram"
+                    }
+                </h4>
+        </h3>
+        <h3>
+            DELETE  /student/:id
+                <h4>
+                    Sample Request:
+                    http://localhost:9000/student/5b6010a9ea18cd582f01c9ee
+                </h4>
+        </h3>
+
+}
